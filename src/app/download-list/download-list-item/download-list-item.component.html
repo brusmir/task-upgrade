@@ -1,0 +1,9 @@
+<div class="download-list-item">
+  @switch (job().status) {
+    @case (JobStatus.PENDING) {
+      <span>Job {{job().jobId}} PENDING...</span>
+    }
+    @case (JobStatus.DONE) {
+      <span class="pointer" (click)="downloadFile$.emit(job().jobId)">Job {{job().jobId}} DONE - download here</span>
+    }
+  }

@@ -1,0 +1,27 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  height: calc(100vh - 8rem);
+
+  &-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 2rem;
+  }
+
+  &-list {
+      width: 80%;
+      display: flex;
+      align-self: center;
+      height: calc(100vh - 8rem - 1rem - 100px - 36px);
+      overflow: auto;
+      margin-bottom: 1rem;
+  }
+
+  &-spinner {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+  }
+}

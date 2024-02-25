@@ -1,0 +1,11 @@
+<div class="download-list">
+  @if(jobs().length) {
+    @for (job of jobs(); track $index) {
+      <app-download-list-item [job]="job" (downloadFile$)="onDownloadFile($event)"></app-download-list-item>
+    }
+  } @else {
+    <div class="empty-list">
+      <span>Welcome to snapADDY</span>
+  </div>
+  }
+</div>
